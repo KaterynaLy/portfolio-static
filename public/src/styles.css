@@ -1,0 +1,125 @@
+body {
+  font-family: Arial, sans-serif;
+  margin: 20px;
+  padding: 10px;
+  line-height: 1.6;
+  color: #333;
+  background-color: #f9f9f9;
+}
+
+header {
+  text-align: center;
+  background: #333;
+  color: white;
+  padding: 20px;
+}
+
+nav ul {
+  display: flex;
+  justify-content: center;
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  background-color: #555;
+}
+
+nav ul li {
+  margin: 0 15px;
+}
+
+nav ul li a {
+  color: white;
+  text-decoration: none;
+}
+
+p {
+  text-align: justify;
+}
+main {
+  display: grid;
+  grid-template-columns: 60% 40%;
+  /* Izquierda 60%, derecha 40% */
+  gap: 20px;
+  /* Espacio entre columnas */
+  align-items: stretch;
+  /* Asegura que las secciones no se igualen en altura */
+}
+
+main > section {
+  background: white;
+  padding: 15px;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+}
+section#objectivo,
+section#hobbies {
+  grid-column: span 2;
+
+  /* Centra estas secciones */
+}
+
+section#experiencia {
+  grid-column: 1;
+  /* Columna izquierda */
+}
+
+section#educacion {
+  grid-column: 2;
+  /* Columna derecha */
+  margin-bottom: 0;
+  /* Sin espacio extra debajo */
+}
+
+section#habilidades {
+  grid-column: 2;
+  /* También en la columna derecha */
+  margin-top: 0;
+  /* Sin espacio extra encima */
+}
+footer {
+  text-align: center;
+  background: #333;
+  color: white;
+  padding: 20px;
+}
+
+footer a {
+  color: #ffd700;
+  text-decoration: none;
+}
+
+footer a:hover {
+  text-decoration: underline;
+}
+/* Estilos para la sección Objectivo */
+
+#objectivo {
+  grid-column: span 2;
+  padding: 10px 20px;
+  /* Reduce el espacio superior e inferior */
+  position: relative;
+}
+
+#objectivo .compact-highlight {
+  background: linear-gradient(135deg, #ffd700, #ff8c00);
+  /* Fondo degradado */
+  color: white;
+  padding: 10px;
+  /* Menos espacio interno */
+  border-radius: 10px;
+  font-size: 1em;
+  /* Tamaño de fuente más compacto */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  margin: 0 auto;
+  /* Centra la sección */
+  line-height: 1.4;
+  /* Reduce el espacio entre líneas */
+}
+
+#objectivo .compact-highlight h3 {
+  font-size: 1.4em;
+  /* Reduce el tamaño del título */
+  margin-bottom: 5px;
+  /* Espacio más pequeño debajo del título */
+  text-transform: uppercase;
+}
