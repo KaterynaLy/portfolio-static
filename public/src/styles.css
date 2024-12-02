@@ -123,3 +123,12 @@ footer a:hover {
   /* Espacio más pequeño debajo del título */
   text-transform: uppercase;
 }
+/*svg*/
+svg {
+  width: 16px;
+  height: 16px;
+  fill: #4caf50; 
+}
+svg:hover {
+  fill: #ff5722; 
+}

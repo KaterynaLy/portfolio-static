@@ -1,0 +1,269 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>KaterynaLysenko</title>
+        <link rel="stylesheet" href="./src/output.css" />
+    </head>
+  <body>
+    <div class="bg-white">
+    <header class="absolute inset-x-0 top-0 z-50">
+    <nav
+      class="flex items-center justify-between p-6 lg:px-8"
+      aria-label="Global"
+    >
+      <div class="flex lg:flex-1">
+        <a href="#education" class="-m-1.5 p-1.5">
+          <span class="sr-only">Education</span>
+        </a>
+      </div>
+
+      <div class="hidden lg:flex lg:gap-x-12">
+        <a href="#" class="text-sm/6 font-semibold text-gray-900">Educacion</a>
+        <a href="#" class="text-sm/6 font-semibold text-gray-900"
+          >Habilidades</a
+        >
+        <a href="#" class="text-sm/6 font-semibold text-gray-900"
+          >Experiencia</a
+        >
+        <a href="#" class="text-sm/6 font-semibold text-gray-900">Contacto</a>
+      </div>
+      </div>
+    </nav>
+    <!-- Mobile menu, show/hide based on menu open state. -->
+    <div class="lg:hidden" role="dialog" aria-modal="true">
+      <!-- Background backdrop, show/hide based on slide-over state. -->
+      <div class="fixed inset-0 z-50"></div>
+      <div
+        class="fixed inset-y-0 right-0 z-50 w-full overflow-y-auto bg-white px-6 py-6 sm:max-w-sm sm:ring-1 sm:ring-gray-900/10"
+      >
+        <div class="flex items-center justify-between">
+          <a href="#education" class="-m-1.5 p-1.5">
+            <span class="sr-only">Educacion</span>
+            <img
+              class="h-8 w-auto"
+              src="https://tailwindui.com/plus/img/logos/mark.svg?color=indigo&shade=600"
+              alt=""
+            />
+          </a>
+          <button type="button" class="-m-2.5 rounded-md p-2.5 text-gray-700">
+            <span class="sr-only">Close menu</span>
+            <svg
+              class="size-6"
+              fill="none"
+              viewBox="0 0 24 24"
+              stroke-width="1.5"
+              stroke="currentColor"
+              aria-hidden="true"
+              data-slot="icon"
+            >
+              <path
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                d="M6 18 18 6M6 6l12 12"
+              />
+            </svg>
+          </button>
+        </div>
+        <div class="mt-6 flow-root">
+          <div class="-my-6 divide-y divide-gray-500/10">
+            <div class="space-y-2 py-6">
+              <a
+                href="#"
+                class="-mx-3 block rounded-lg px-3 py-2 text-base/7 font-semibold text-gray-900 hover:bg-gray-50"
+                >Product</a
+              >
+              <a
+                href="#"
+                class="-mx-3 block rounded-lg px-3 py-2 text-base/7 font-semibold text-gray-900 hover:bg-gray-50"
+                >Features</a
+              >
+              <a
+                href="#"
+                class="-mx-3 block rounded-lg px-3 py-2 text-base/7 font-semibold text-gray-900 hover:bg-gray-50"
+                >Marketplace</a
+              >
+              <a
+                href="#"
+                class="-mx-3 block rounded-lg px-3 py-2 text-base/7 font-semibold text-gray-900 hover:bg-gray-50"
+                >Company</a
+              >
+            </div>
+            <div class="py-6">
+              <a
+                href="#"
+                class="-mx-3 block rounded-lg px-3 py-2.5 text-base/7 font-semibold text-gray-900 hover:bg-gray-50"
+                >Log in</a
+              >
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </header>
+
+  <div class="relative isolate px-6 pt-14 lg:px-8">
+    <div
+      class="absolute inset-x-0 -top-40 -z-10 transform-gpu overflow-hidden blur-3xl sm:-top-80"
+      aria-hidden="true"
+    >
+      <div
+        class="relative left-[calc(50%-11rem)] aspect-[1155/678] w-[36.125rem] -translate-x-1/2 rotate-[30deg] bg-gradient-to-tr from-[#ff80b5] to-[#9089fc] opacity-30 sm:left-[calc(50%-30rem)] sm:w-[72.1875rem]"
+        style="
+          clip-path: polygon(
+            74.1% 44.1%,
+            100% 61.6%,
+            97.5% 26.9%,
+            85.5% 0.1%,
+            80.7% 2%,
+            72.5% 32.5%,
+            60.2% 62.4%,
+            52.4% 68.1%,
+            47.5% 58.3%,
+            45.2% 34.5%,
+            27.5% 76.7%,
+            0.1% 64.9%,
+            17.9% 100%,
+            27.6% 76.8%,
+            76.1% 97.7%,
+            74.1% 44.1%
+          );
+        "
+      ></div>
+    </div>
+    <div class="mx-auto max-w-2xl py-32 sm:py-48 lg:py-56">
+      <div class="hidden sm:mb-8 sm:flex sm:justify-center">
+        <div
+          class="relative rounded-full px-3 py-1 text-sm/6 text-gray-600 ring-1 ring-gray-900/10 hover:ring-gray-900/20"
+        >
+          Compartiendo mis conocimientos y experiencia.
+          <a href="#" class="font-semibold text-indigo-600"
+            ><span class="absolute inset-0" aria-hidden="true"></span>Read more
+            <span aria-hidden="true">&rarr;</span></a
+          >
+        </div>
+      </div>
+      <div class="text-center">
+        <h1
+          class="text-balance text-5xl font-semibold tracking-tight text-gray-900 sm:text-7xl"
+        >
+          Kateryna Lysenko Java Developer
+        </h1>
+        <p
+          class="mt-8 text-pretty text-lg font-medium text-gray-500 sm:text-xl/8"
+        >
+          Desarrolladora de software con formación profesional en Programación
+          con Lenguajes Orientados a Objetos y Bases de Datos Relacionales.
+          Aunque tengo experiencia en frontend, mi enfoque principal es el
+          desarrollo backend.
+        </p>
+        <div class="mt-10 flex items-center justify-center gap-x-6">
+          <a
+            href="#"
+            class="rounded-md bg-indigo-600 px-3.5 py-2.5 text-sm font-semibold text-white shadow-sm hover:bg-indigo-500 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-indigo-600"
+            >Get started</a
+          >
+        </div>
+      </div>
+    </div>
+    <div
+      class="absolute inset-x-0 top-[calc(100%-13rem)] -z-10 transform-gpu overflow-hidden blur-3xl sm:top-[calc(100%-30rem)]"
+      aria-hidden="true"
+    >
+      <div
+        class="relative left-[calc(50%+3rem)] aspect-[1155/678] w-[36.125rem] -translate-x-1/2 bg-gradient-to-tr from-[#ff80b5] to-[#9089fc] opacity-30 sm:left-[calc(50%+36rem)] sm:w-[72.1875rem]"
+        style="
+          clip-path: polygon(
+            74.1% 44.1%,
+            100% 61.6%,
+            97.5% 26.9%,
+            85.5% 0.1%,
+            80.7% 2%,
+            72.5% 32.5%,
+            60.2% 62.4%,
+            52.4% 68.1%,
+            47.5% 58.3%,
+            45.2% 34.5%,
+            27.5% 76.7%,
+            0.1% 64.9%,
+            17.9% 100%,
+            27.6% 76.8%,
+            76.1% 97.7%,
+            74.1% 44.1%
+          );
+        "
+      ></div>
+    </div>
+  </div>
+</div>
+    <footer class="bg-gray-900 text-white p-6">
+        <div class="container mx-auto grid grid-cols-1 md:grid-cols-2 gap-8">
+            <!-- Columna 1: Mi Propósito -->
+            <div>
+            <h5 class="text-lg font-semibold mb-4">Mi Propósito</h5>
+            <p class="text-gray-300 leading-relaxed">
+                Mi objetivo es unirme a un equipo donde pueda combinar mi experiencia comercial con mis habilidades técnicas,
+                desarrollando soluciones tecnológicas que realmente impacten a los usuarios y contribuyan al éxito de los proyectos.
+                Creo firmemente en la importancia de alinear la tecnología con los objetivos del negocio, ayudando a las empresas
+                a optimizar sus procesos y ofrecer productos y servicios de calidad.
+            </p>
+            <p class="text-gray-300 leading-relaxed mt-4">
+                Me apasiona trabajar en proyectos que unan el mundo tech y los negocios, donde pueda colaborar con personas
+                creativas e innovadoras. Siempre estoy en búsqueda de oportunidades para aprender y crecer, adaptándome a los
+                desafíos de un entorno dinámico y contribuyendo al desarrollo de equipos eficientes y motivados.
+            </p>
+            </div>
+
+            <!-- Columna 2: Contacto y Derechos Reservados -->
+            <div class="flex flex-col justify-between">
+            <div>
+                <h5 class="text-lg font-semibold mb-4">Contacto</h5>
+                <ul class="space-y-4">
+                <li class="flex items-center">
+                    <a href="tel:+34626661996" class="flex items-center text-white hover:underline">
+                    <svg id="icon-phone" class="w-5 h-5 mr-2" viewBox="0 0 32 32">
+                        <path fill="currentColor" d="M22 20c-2 2-2 4-4 4s-4-2-6-4-4-4-4-6 2-2 4-4-4-8-6-8-6 6-6 6c0 4 4.109 12.109 8 16s12 8 16 8c0 0 6-4 6-6s-6-8-8-6z"></path>
+                    </svg>
+                    626661996
+                    </a>
+                </li>
+                <li class="flex items-center">
+                    <a href="mailto:kateryna.lysenko@icloud.com" class="flex items-center text-white hover:underline">
+                    <svg id="icon-envelop" class="w-5 h-5 mr-2" viewBox="0 0 32 32">
+                        <path fill="currentColor" d="M29 4h-26c-1.65 0-3 1.35-3 3v20c0 1.65 1.35 3 3 3h26c1.65 0 3-1.35 3-3v-20c0-1.65-1.35-3-3-3zM12.461 17.199l-8.461 6.59v-15.676l8.461 9.086zM5.512 8h20.976l-10.488 7.875-10.488-7.875zM12.79 17.553l3.21 3.447 3.21-3.447 6.58 8.447h-19.579l6.58-8.447zM19.539 17.199l8.461-9.086v15.676l-8.461-6.59z"></path>
+                    </svg>
+                    kateryna.lysenko@icloud.com
+                    </a>
+                </li>
+                <li class="flex items-center">
+                    <a href="https://www.linkedin.com/in/kateryna-lysenko" class="flex items-center text-white hover:underline">
+                    <svg id="icon-linkedin" class="w-5 h-5 mr-2" viewBox="0 0 32 32">
+                        <path fill="currentColor" d="M29 0h-26c-1.65 0-3 1.35-3 3v26c0 1.65 1.35 3 3 3h26c1.65 0 3-1.35 3-3v-26c0-1.65-1.35-3-3-3zM12 26h-4v-14h4v14zM10 10c-1.106 0-2-0.894-2-2s0.894-2 2-2c1.106 0 2 0.894 2 2s-0.894 2-2 2zM26 26h-4v-8c0-1.106-0.894-2-2-2s-2 0.894-2 2v8h-4v-14h4v2.481c0.825-1.131 2.087-2.481 3.5-2.481 2.488 0 4.5 2.238 4.5 5v9z"></path>
+                    </svg>
+                    LinkedIn
+                    </a>
+                </li>
+                <li class="flex items-center">
+                    <a href="https://github.com/KaterynaLysenko" class="flex items-center text-white hover:underline">
+                    <svg id="icon-github" class="w-5 h-5 mr-2" viewBox="0 0 32 32">
+                        <path fill="currentColor" d="M16 .4a16 16 0 0 0-5.06 31.16c.8.14 1.1-.34 1.1-.78v-3c-4.49 1-5.44-1.94-5.44-1.94a4.3 4.3 0 0 0-1.78-2.35c-1.45-1 .12-1 .12-1a3.4 3.4 0 0 1 2.47 1.66c1.45 2.48 3.8 1.77 4.72 1.36a3.41 3.41 0 0 1 1-2.15c-3.6-.4-7.4-1.8-7.4-8a6.34 6.34 0 0 1 1.68-4.35 5.89 5.89 0 0 1 .16-4.3s1.36-.43 4.46 1.66a15.53 15.53 0 0 1 8 0c3.12-2.1 4.48-1.66 4.48-1.66a5.89 5.89 0 0 1 .16 4.3 6.34 6.34 0 0 1 1.68 4.35c0 6.2-3.8 7.6-7.42 8.04a3.83 3.83 0 0 1 1.08 3v4.5c0 .44.3.92 1.1.78a16 16 0 0 0-5.1-31.16"></path>
+                    </svg>
+                    GitHub
+                    </a>
+                </li>
+                </ul>
+            </div>
+            <!-- Derechos Reservados -->
+            <div class="mt-8 text-right">
+                <p class="text-gray-400 text-sm">© 2024 Kateryna Lysenko. Todos los derechos reservados.</p>
+            </div>
+            </div>
+        </div>
+    </footer>
+</body>
+</html>
+
+
+
+
