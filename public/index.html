@@ -5,6 +5,21 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Kateryna Lysenko - Desarrolladora Java</title>
     <link rel="stylesheet" href="./src/output.css" />
+        <style>
+      /* Clase para animar la rotación */
+      .animate-spin {
+        animation: spin 5s linear infinite;
+      }
+
+      @keyframes spin {
+        0% {
+          transform: rotate(0deg);
+        }
+        100% {
+          transform: rotate(360deg);
+        }
+      }
+    </style>
   </head>
  <body class="relative">
     <!-- Fondo global -->
@@ -55,7 +70,7 @@
         <!-- Menú Principal para Desktop -->
         <div class="hidden lg:flex lg:gap-x-12">
           <a
-            href="#education"
+            href="#educacion"
             class="text-sm font-semibold text-white hover:underline"
             >Educación</a
           >
@@ -70,7 +85,7 @@
             >Experiencia</a
           >
           <a
-            href="#contact"
+            href="#contacto"
             class="text-sm font-semibold text-white hover:underline"
             >Contacto</a
           >
@@ -118,16 +133,50 @@
     </nav>
     </header>
      <!-- Contenido Principal -->
-    <main class="relative z-10 max-w-4xl mx-auto p-6">
-      <h1 class="text-4xl font-bold">Kateryna Lysenko</h1>
-      <h2 class="text-xl">Desarrolladora Java</h2>
-      <p class="mt-2">
-        Recientemente formada en tecnologías de la información, especializada en
-        Java, Spring Boot, MySQL y JavaScript.
+   <main class="relative z-10 max-w-4xl mx-auto p-6">
+  <h1 class="text-4xl font-bold text-gray-900">Kateryna Lysenko Valkova</h1>
+  <h2 class="text-xl text-gray-700">Desarrolladora Java</h2>
+  <p class="mt-2 text-gray-600">
+    Recientemente formada en tecnologías de la información, especializada en
+    <strong>Java, Spring Boot, MySQL y JavaScript</strong>.
+  </p>
+
+  <!-- Nueva sección integrada con foto y texto -->
+  <div class="mt-6 flex items-center gap-6 bg-indigo-50 rounded-lg p-4 shadow-md">
+    <img
+      src="./images/Katya_photo1.jpg"
+      alt="Kateryna Lysenko"
+      class="w-20 h-20 rounded-full border-4 border-indigo-300 shadow-lg"
+    />
+    <div>
+      <p class="text-lg font-medium text-gray-800">
+        ¡Hola! Estoy encantada de compartir mi trayectoria contigo.
       </p>
-      <section id="objectivo" class="bg-white shadow-lg rounded-lg p-6 mb-6">
-        <h3 class="text-2xl font-semibold mb-4 text-indigo-900">Objetivo</h3>
-        <p class="text-gray-600">
+      <a
+        href="#esencia"
+        class="text-indigo-600 font-semibold hover:underline mt-1 block"
+      >
+        Conoce más sobre mí →
+      </a>
+    </div>
+  </div>
+    <section id="objectivo" class="bg-white shadow-lg rounded-lg p-6 mb-6 mt-6">
+        <div class="flex items-center gap-3">
+          <svg
+            id="icon-spinner6name"
+            class="animate-spin"
+            width="32"
+            height="32"
+            viewBox="0 0 32 32"
+          >
+            <path
+              fill="#03346e"
+              d="M12 4c0-2.209 1.791-4 4-4s4 1.791 4 4c0 2.209-1.791 4-4 4s-4-1.791-4-4zM24.719 16c0 0 0 0 0 0 0-1.812 1.469-3.281 3.281-3.281s3.281 1.469 3.281 3.281c0 0 0 0 0 0 0 1.812-1.469 3.281-3.281 3.281s-3.281-1.469-3.281-3.281zM21.513 24.485c0-1.641 1.331-2.972 2.972-2.972s2.972 1.331 2.972 2.972c0 1.641-1.331 2.972-2.972 2.972s-2.972-1.331-2.972-2.972zM13.308 28c0-1.487 1.205-2.692 2.692-2.692s2.692 1.205 2.692 2.692c0 1.487-1.205 2.692-2.692 2.692s-2.692-1.205-2.692-2.692zM5.077 24.485c0-1.346 1.092-2.438 2.438-2.438s2.438 1.092 2.438 2.438c0 1.346-1.092 2.438-2.438 2.438s-2.438-1.092-2.438-2.438zM1.792 16c0-1.22 0.989-2.208 2.208-2.208s2.208 0.989 2.208 2.208c0 1.22-0.989 2.208-2.208 2.208s-2.208-0.989-2.208-2.208zM5.515 7.515c0 0 0 0 0 0 0-1.105 0.895-2 2-2s2 0.895 2 2c0 0 0 0 0 0 0 1.105-0.895 2-2 2s-2-0.895-2-2zM28.108 7.515c0 2.001-1.622 3.623-3.623 3.623s-3.623-1.622-3.623-3.623c0-2.001 1.622-3.623 3.623-3.623s3.623 1.622 3.623 3.623z"
+            ></path>
+          </svg>
+          <h3 class="text-2xl font-semibold text-indigo-900">Objetivo</h3>
+        </div>
+        <p class="text-gray-600 mt-6">
           Mi objetivo es unirme a un equipo donde pueda combinar mi experiencia
           comercial con mis habilidades técnicas, desarrollando soluciones
           tecnológicas que realmente impacten a los usuarios.
@@ -241,7 +290,99 @@
         </div>
       </section>
 
-      <!-- Idiomas -->
+      <section id="educacion" class="bg-white shadow-lg rounded-lg p-6 mb-6">
+    <h3 class="text-2xl font-semibold mb-4 text-indigo-900 border-b border-gray-200 pb-2">
+      Educación
+    </h3>
+    <ul class="space-y-6">
+      <!-- Item 1 -->
+      <li class="flex items-start">
+        <div class="flex-shrink-0">
+          <svg id="icon-file-javaname" width="48" height="48" viewBox="0 0 32 32">
+            <path fill="#03346e" d="M4.994 10h23.011c1.654 0 2.994 1.343 2.994 2.999v7.002c0 1.657-1.341 2.999-2.994 2.999h-23.011c-1.654 0-2.994-1.343-2.994-2.999v-7.002c0-1.657 1.341-2.999 2.994-2.999zM5.007 11c-1.109 0-2.007 0.9-2.007 1.992v7.016c0 1.1 0.898 1.992 2.007 1.992h22.985c1.109 0 2.007-0.9 2.007-1.992v-7.016c0-1.1-0.898-1.992-2.007-1.992h-22.985zM19.5 18.25l1.5-5.25h1l-2 7h-1l-2-7h1l1.5 5.25zM5 17v0.994c0 1.108 0.894 2.006 2.005 2.006h0.99c1.107 0 2.005-0.887 2.005-2.006v-4.994h-1v5.009c0 0.54-0.447 0.991-0.999 0.991h-1.002c-0.556 0-0.999-0.448-0.999-1v-1h-1zM15 17h-3v3h-1v-5c0-1.112 0.898-2 2.005-2h0.99c1.111 0 2.005 0.895 2.005 2v5h-1v-3zM12.999 14c-0.552 0-0.999 0.444-0.999 1v1h3v-1c0-0.552-0.443-1-0.999-1h-1.002zM27 17h-3v3h-1v-5c0-1.112 0.898-2 2.005-2h0.99c1.111 0 2.005 0.895 2.005 2v5h-1v-3zM24.999 14c-0.552 0-0.999 0.444-0.999 1v1h3v-1c0-0.552-0.443-1-0.999-1h-1.002z"></path>
+          </svg>
+        </div>
+        <div class="ml-4">
+          <h4 class="text-lg font-medium text-gray-800">
+            FP Programación con Lenguajes Orientados a Objetos - Ironhack, 2024
+          </h4>
+          <a
+            href="./assets/Título_TECH_CFO.pdf"
+            target="_blank"
+            class="text-indigo-600 text-sm hover:underline"
+            >Ver el documento</a
+          >
+        </div>
+      </li>
+      <!-- Item 2 -->
+      <li class="flex items-start">
+        <div class="flex-shrink-0">
+          <svg id="icon-file-phpname" width="32" height="32" viewBox="0 0 32 32" x="480" y="0">
+            <path fill="#03346e" d="M8.007 10h16.986c1.671 0 3.007 1.343 3.007 2.999v7.002c0 1.657-1.346 2.999-3.007 2.999h-16.986c-1.671 0-3.007-1.343-3.007-2.999v-7.002c0-1.657 1.346-2.999 3.007-2.999zM7.995 11c-1.102 0-1.995 0.9-1.995 1.992v7.016c0 1.1 0.902 1.992 1.995 1.992h17.011c1.102 0 1.995-0.9 1.995-1.992v-7.016c0-1.1-0.902-1.992-1.995-1.992h-17.011zM8 15v-2h2.995c1.111 0 2.005 0.895 2.005 2 0 1.112-0.898 2-2.005 2h-1.995v3h-1v-5zM9 14v2h2.001c0.552 0 0.999-0.444 0.999-1 0-0.552-0.443-1-0.999-1h-2.001zM18 16v-3h1v7h-1v-3h-3v3h-1v-7h1v3h3zM20 15v-2h2.995c1.111 0 2.005 0.895 2.005 2 0 1.112-0.898 2-2.005 2h-1.995v3h-1v-5zM21 14v2h2.001c0.552 0 0.999-0.444 0.999-1 0-0.552-0.443-1-0.999-1h-2.001z"></path>
+          </svg>
+        </div>
+        <div class="ml-4">
+          <h4 class="text-lg font-medium text-gray-800">
+            Fullstack PHP - Barcelona Activa, 2023
+          </h4>
+        </div>
+      </li>
+      <!-- Item 3 -->
+      <li class="flex items-start">
+        <div class="flex-shrink-0">
+          <svg id="icon-document-certificatename" width="32" height="32" viewBox="0 0 32 32" x="288" y="0">
+            <path fill="#03346e" d="M21 24.95v0 0c0.619-0.631 1-1.496 1-2.45 0-1.933-1.567-3.5-3.5-3.5s-3.5 1.567-3.5 3.5c0 0.954 0.381 1.818 1 2.45v1.050h-8c-0.545 0-1-0.446-1-0.995v-23.009c0-0.54 0.446-0.995 0.996-0.995h10.004v4.994c0 1.119 0.895 2.006 1.998 2.006h4.002v17.007c0 0.548-0.448 0.993-1 0.993h-2v-1.050zM17 25.663v0 0c0.455 0.216 0.963 0.337 1.5 0.337s1.045-0.121 1.5-0.337v3.937l-1.5-1.5-1.5 1.5v-3.937zM21 27h2.003c1.103 0 1.997-0.898 1.997-1.991v-18.009l-6-7h-10.997c-1.106 0-2.003 0.898-2.003 2.007v22.985c0 1.109 0.891 2.007 1.997 2.007h8.003v5l2.5-2.5 2.5 2.5v-5zM19 1.5l4.7 5.5h-3.703c-0.546 0-0.997-0.452-0.997-1.009v-4.491zM9 7v1h7v-1h-7zM9 4v1h7v-1h-7zM9 10v1h13v-1h-13zM9 13v1h13v-1h-13zM9 16v1h13v-1h-13zM18.5 25v0c-1.381 0-2.5-1.119-2.5-2.5s1.119-2.5 2.5-2.5c1.381 0 2.5 1.119 2.5 2.5s-1.119 2.5-2.5 2.5z"></path>
+          </svg>
+        </div>
+        <div class="ml-4">
+          <h4 class="text-lg font-medium text-gray-800">
+            MBA en Dirección Financiera - TECH CFO, 2023
+          </h4>
+          <a
+            href="./assets/Título_TECH_CFO.pdf"
+            target="_blank"
+            class="text-indigo-600 text-sm hover:underline"
+            >Ver el documento</a
+          >
+        </div>
+      </li>
+      <!-- Item 4 -->
+      <li class="flex items-start">
+        <div class="flex-shrink-0">
+          <svg id="icon-document-certificate1name" width="32" height="32" viewBox="0 0 32 32" x="336" y="0">
+            <path fill="#03346e" d="M21 24.95v0 0c0.619-0.631 1-1.496 1-2.45 0-1.933-1.567-3.5-3.5-3.5s-3.5 1.567-3.5 3.5c0 0.954 0.381 1.818 1 2.45v2.050h-8.003c-1.107 0-1.997-0.899-1.997-2.007v-22.985c0-1.109 0.899-2.007 2.009-2.007h9.991v6.002c0 1.111 0.898 1.998 2.006 1.998h4.994v17.003c0 1.107-0.894 1.997-1.997 1.997h-2.003v-2.050zM17 25.663v4.937l1.5-1.5 1.5 1.5v-4.937c-0.455 0.216-0.963 0.337-1.5 0.337s-1.045-0.121-1.5-0.337v0 0zM19 0v5.997c0 0.554 0.451 1.003 0.991 1.003h5.009l-6-7zM9 7v1h7v-1h-7zM9 4v1h7v-1h-7zM9 10v1h13v-1h-13zM9 13v1h13v-1h-13zM9 16v1h13v-1h-13zM18.5 25c1.381 0 2.5-1.119 2.5-2.5s-1.119-2.5-2.5-2.5c-1.381 0-2.5 1.119-2.5 2.5s1.119 2.5 2.5 2.5v0z"></path>
+          </svg>
+        </div>
+        <div class="ml-4">
+          <h4 class="text-lg font-medium text-gray-800">
+            Postgrado en Ingeniería Mecánica - Ucrania, 2008
+          </h4>
+          <a
+            href="docs/mi_documento.pdf"
+            target="_blank"
+            class="text-indigo-600 text-sm hover:underline"
+            >Ver el documento</a
+          >
+        </div>
+      </li>
+    </ul>
+    <div class="mt-6 bg-indigo-50 rounded-lg p-4">
+      <h4 class="text-lg font-semibold text-indigo-900">
+        Herramientas y Plataformas Técnicas
+      </h4>
+      <p class="text-sm text-gray-700 mt-2">
+        <strong>Herramientas BI de Datos:</strong> Experiencia en visualización y
+        análisis de datos para la toma de decisiones.<br />
+        <strong>Confluence & Jira:</strong> Habilidad en documentación de
+        proyectos y gestión ágil.<br />
+        <strong>Cobol:</strong> Competencia en operaciones de sistemas
+        heredados.<br />
+        <strong>SAP:</strong> Nivel usuario para planificación de recursos y
+        procesos empresariales.
+      </p>
+    </div>
+    </section>
+          <!-- Idiomas -->
       <section id="idiomas" class="shadow-lg rounded-lg p-6 mb-6">
         <h3 class="text-2xl font-semibold mb-4 text-indigo-900">Idiomas</h3>
         <ul class="list-disc pl-6 text-gray-700 space-y-2">
@@ -281,144 +422,6 @@
         <p class="mt-4 text-gray-700">Referencias disponibles a solicitud.</p>
       </section>
 
-
-      <section id="educacion" class="bg-white shadow-lg rounded-lg p-6 mb-6">
-    <h3 class="text-2xl font-semibold mb-4 text-indigo-900 border-b border-gray-200 pb-2">
-      Educación
-    </h3>
-    <ul class="space-y-6">
-      <!-- Item 1 -->
-      <li class="flex items-start">
-        <div class="flex-shrink-0">
-          <svg
-            xmlns="http://www.w3.org/2000/svg"
-            class="h-6 w-6 text-indigo-600"
-            fill="none"
-            viewBox="0 0 24 24"
-            stroke="currentColor"
-          >
-            <path
-              stroke-linecap="round"
-              stroke-linejoin="round"
-              stroke-width="2"
-              d="M12 6v6h4M4 6v6m16-6v6M4 18v6m8-6v6m8-6v6"
-            />
-          </svg>
-        </div>
-        <div class="ml-4">
-          <h4 class="text-lg font-medium text-gray-800">
-            FP Programación con Lenguajes Orientados a Objetos - Ironhack, 2024
-          </h4>
-          <a
-            href="./assets/Título_TECH_CFO.pdf"
-            target="_blank"
-            class="text-indigo-600 text-sm hover:underline"
-            >Ver el documento</a
-          >
-        </div>
-      </li>
-      <!-- Item 2 -->
-      <li class="flex items-start">
-        <div class="flex-shrink-0">
-          <svg
-            xmlns="http://www.w3.org/2000/svg"
-            class="h-6 w-6 text-indigo-600"
-            fill="none"
-            viewBox="0 0 24 24"
-            stroke="currentColor"
-          >
-            <path
-              stroke-linecap="round"
-              stroke-linejoin="round"
-              stroke-width="2"
-              d="M3 10h18M4 6h16M4 14h16"
-            />
-          </svg>
-        </div>
-        <div class="ml-4">
-          <h4 class="text-lg font-medium text-gray-800">
-            Fullstack PHP - Barcelona Activa, 2023
-          </h4>
-        </div>
-      </li>
-      <!-- Item 3 -->
-      <li class="flex items-start">
-        <div class="flex-shrink-0">
-          <svg
-            xmlns="http://www.w3.org/2000/svg"
-            class="h-6 w-6 text-indigo-600"
-            fill="none"
-            viewBox="0 0 24 24"
-            stroke="currentColor"
-          >
-            <path
-              stroke-linecap="round"
-              stroke-linejoin="round"
-              stroke-width="2"
-              d="M12 4v16m-8-8h16"
-            />
-          </svg>
-        </div>
-        <div class="ml-4">
-          <h4 class="text-lg font-medium text-gray-800">
-            MBA en Dirección Financiera - TECH CFO, 2023
-          </h4>
-          <a
-            href="./assets/Título_TECH_CFO.pdf"
-            target="_blank"
-            class="text-indigo-600 text-sm hover:underline"
-            >Ver el documento</a
-          >
-        </div>
-      </li>
-      <!-- Item 4 -->
-      <li class="flex items-start">
-        <div class="flex-shrink-0">
-          <svg
-            xmlns="http://www.w3.org/2000/svg"
-            class="h-6 w-6 text-indigo-600"
-            fill="none"
-            viewBox="0 0 24 24"
-            stroke="currentColor"
-          >
-            <path
-              stroke-linecap="round"
-              stroke-linejoin="round"
-              stroke-width="2"
-              d="M6 4h12M6 20h12M6 12h12"
-            />
-          </svg>
-        </div>
-        <div class="ml-4">
-          <h4 class="text-lg font-medium text-gray-800">
-            Postgrado en Ingeniería Mecánica - Ucrania, 2008
-          </h4>
-          <a
-            href="docs/mi_documento.pdf"
-            target="_blank"
-            class="text-indigo-600 text-sm hover:underline"
-            >Ver el documento</a
-          >
-        </div>
-      </li>
-    </ul>
-    <div class="mt-6 bg-indigo-50 rounded-lg p-4">
-      <h4 class="text-lg font-semibold text-indigo-900">
-        Herramientas y Plataformas Técnicas
-      </h4>
-      <p class="text-sm text-gray-700 mt-2">
-        <strong>Herramientas BI de Datos:</strong> Experiencia en visualización y
-        análisis de datos para la toma de decisiones.<br />
-        <strong>Confluence & Jira:</strong> Habilidad en documentación de
-        proyectos y gestión ágil.<br />
-        <strong>Cobol:</strong> Competencia en operaciones de sistemas
-        heredados.<br />
-        <strong>SAP:</strong> Nivel usuario para planificación de recursos y
-        procesos empresariales.
-      </p>
-    </div>
-    </section>
-
       <section id="habilidades" class="bg-gray-50 shadow-lg rounded-lg p-6 mb-6">
       <h3 class="text-2xl font-semibold mb-4 text-indigo-900 border-b border-gray-200 pb-2">
         Habilidades
@@ -427,19 +430,8 @@
     <!-- Habilidad 1 -->
     <div class="flex items-start">
       <div class="flex-shrink-0">
-        <svg
-          xmlns="http://www.w3.org/2000/svg"
-          class="h-6 w-6 text-indigo-600"
-          fill="none"
-          viewBox="0 0 24 24"
-          stroke="currentColor"
-        >
-          <path
-            stroke-linecap="round"
-            stroke-linejoin="round"
-            stroke-width="2"
-            d="M13 16h-1v-4h-3l4-8v6h3l-4 8z"
-          />
+        <svg id="icon-bubbles4name" width="36" height="32" viewBox="0 0 36 32" x="48" y="48">
+          <path fill="#03346e" d="M15 4c-1.583 0-3.112 0.248-4.543 0.738-1.341 0.459-2.535 1.107-3.547 1.926-1.876 1.518-2.91 3.463-2.91 5.474 0 1.125 0.315 2.217 0.935 3.247 0.646 1.073 1.622 2.056 2.821 2.842 0.951 0.624 1.592 1.623 1.761 2.748 0.028 0.187 0.051 0.375 0.068 0.564 0.085-0.079 0.169-0.16 0.254-0.244 0.754-0.751 1.771-1.166 2.823-1.166 0.167 0 0.335 0.011 0.503 0.032 0.605 0.077 1.223 0.116 1.836 0.116 1.583 0 3.112-0.248 4.543-0.738 1.341-0.459 2.535-1.107 3.547-1.926 1.876-1.518 2.91-3.463 2.91-5.474s-1.033-3.956-2.91-5.474c-1.012-0.819-2.206-1.467-3.547-1.926-1.431-0.49-2.96-0.738-4.543-0.738zM15 0v0c8.284 0 15 5.435 15 12.139s-6.716 12.139-15 12.139c-0.796 0-1.576-0.051-2.339-0.147-3.222 3.209-6.943 3.785-10.661 3.869v-0.785c2.008-0.98 3.625-2.765 3.625-4.804 0-0.285-0.022-0.564-0.063-0.837-3.392-2.225-5.562-5.625-5.562-9.434 0-6.704 6.716-12.139 15-12.139zM31.125 27.209c0 1.748 1.135 3.278 2.875 4.118v0.673c-3.223-0.072-6.181-0.566-8.973-3.316-0.661 0.083-1.337 0.126-2.027 0.126-2.983 0-5.732-0.805-7.925-2.157 4.521-0.016 8.789-1.464 12.026-4.084 1.631-1.32 2.919-2.87 3.825-4.605 0.961-1.84 1.449-3.799 1.449-5.825 0-0.326-0.014-0.651-0.039-0.974 2.268 1.873 3.664 4.426 3.664 7.24 0 3.265-1.88 6.179-4.82 8.086-0.036 0.234-0.055 0.474-0.055 0.718z"></path>
         </svg>
       </div>
       <div class="ml-4">
@@ -453,19 +445,9 @@
     <!-- Habilidad 2 -->
     <div class="flex items-start">
       <div class="flex-shrink-0">
-        <svg
-          xmlns="http://www.w3.org/2000/svg"
-          class="h-6 w-6 text-indigo-600"
-          fill="none"
-          viewBox="0 0 24 24"
-          stroke="currentColor"
-        >
-          <path
-            stroke-linecap="round"
-            stroke-linejoin="round"
-            stroke-width="2"
-            d="M9.75 6l-3 3m0 0l3 3m-3-3h6a3 3 0 010 6h-2m2-6a3 3 0 100-6h-2m0 0h-3a3 3 0 010 6h3"
-          />
+        <svg id="icon-clipboardname" width="32" height="32" viewBox="0 0 32 32" x="384" y="48">
+          <path fill="#03346e" d="M29 4h-9c0-2.209-1.791-4-4-4s-4 1.791-4 4h-9c-0.552 0-1 0.448-1 1v26c0 0.552 0.448 1 1 1h26c0.552 0 1-0.448 1-1v-26c0-0.552-0.448-1-1-1zM16 2c1.105 0 2 0.895 2 2s-0.895 2-2 2c-1.105 0-2-0.895-2-2s0.895-2 2-2zM28 30h-24v-24h4v3c0 0.552 0.448 1 1 1h14c0.552 0 1-0.448 1-1v-3h4v24z"></path>
+          <path fill="#03346e" d="M14 26.828l-6.414-7.414 1.828-1.828 4.586 3.586 8.586-7.586 1.829 1.828z"></path>
         </svg>
       </div>
       <div class="ml-4">
@@ -481,19 +463,8 @@
     <!-- Habilidad 3 -->
     <div class="flex items-start">
       <div class="flex-shrink-0">
-        <svg
-          xmlns="http://www.w3.org/2000/svg"
-          class="h-6 w-6 text-indigo-600"
-          fill="none"
-          viewBox="0 0 24 24"
-          stroke="currentColor"
-        >
-          <path
-            stroke-linecap="round"
-            stroke-linejoin="round"
-            stroke-width="2"
-            d="M5 13l4 4L19 7"
-          />
+        <svg id="icon-winkname" width="32" height="32" viewBox="0 0 32 32" x="576" y="48">
+          <path fill="#03346e" d="M16 32c8.837 0 16-7.163 16-16s-7.163-16-16-16-16 7.163-16 16 7.163 16 16 16zM16 3c7.18 0 13 5.82 13 13s-5.82 13-13 13-13-5.82-13-13 5.82-13 13-13zM16.961 22.22c4.383-0.866 7.785-2.861 9.014-5.519-0.677 5.249-5.047 9.299-10.339 9.299-3.726 0-6.996-2.009-8.84-5.030 2.2 1.721 6.079 2.056 10.165 1.249zM20 11c0-1.657 0.895-3 2-3s2 1.343 2 3c0 1.657-0.895 3-2 3s-2-1.343-2-3zM11 11.609c-1.306 0-2.417 0.489-2.829 1.172-0.111-0.183-0.171-1.005-0.171-1.211 0-0.971 1.343-1.758 3-1.758s3 0.787 3 1.758c0 0.206-0.061 1.028-0.171 1.211-0.412-0.683-1.522-1.172-2.829-1.172z"></path>
         </svg>
       </div>
       <div class="ml-4">
@@ -507,19 +478,9 @@
     <!-- Habilidad 4 -->
     <div class="flex items-start">
       <div class="flex-shrink-0">
-        <svg
-          xmlns="http://www.w3.org/2000/svg"
-          class="h-6 w-6 text-indigo-600"
-          fill="none"
-          viewBox="0 0 24 24"
-          stroke="currentColor"
-        >
-          <path
-            stroke-linecap="round"
-            stroke-linejoin="round"
-            stroke-width="2"
-            d="M15 17h5l-1.405 1.405A2.032 2.032 0 0118.158 19H6a2 2 0 01-2-2V7c0-.271.027-.534.078-.79L4 7h7l1-3h4c1.075 0 2 .725 2 1.617V17z"
-          />
+        <svg id="icon-accessibilityname" width="32" height="32" viewBox="0 0 32 32" x="336" y="48">
+          <path fill="#03346e" d="M13 3c0-1.657 1.343-3 3-3s3 1.343 3 3c0 1.657-1.343 3-3 3s-3-1.343-3-3z"></path>
+          <path fill="#03346e" d="M20 10l10.3-4.443-0.743-1.857-12.557 4.3h-2l-12.557-4.3-0.743 1.857 10.3 4.443v8l-4.102 13.268 1.87 0.709 5.804-12.977h0.857l5.804 12.977 1.87-0.709-4.102-13.268z"></path>
         </svg>
       </div>
       <div class="ml-4">
@@ -533,19 +494,11 @@
     <!-- Habilidad 5 -->
     <div class="flex items-start">
       <div class="flex-shrink-0">
-        <svg
-          xmlns="http://www.w3.org/2000/svg"
-          class="h-6 w-6 text-indigo-600"
-          fill="none"
-          viewBox="0 0 24 24"
-          stroke="currentColor"
-        >
-          <path
-            stroke-linecap="round"
-            stroke-linejoin="round"
-            stroke-width="2"
-            d="M6 9l6 6 6-6"
-          />
+        <svg id="icon-shrinkname" width="32" height="32" viewBox="0 0 32 32" x="288" y="48">
+          <path fill="#03346e" d="M18 14h13l-5-5 6-6-3-3-6 6-5-5z"></path>
+          <path fill="#03346e" d="M18 18v13l5-5 6 6 3-3-6-6 5-5z"></path>
+          <path fill="#03346e" d="M14 18h-13l5 5-6 6 3 3 6-6 5 5z"></path>
+          <path fill="#03346e" d="M14 14v-13l-5 5-6-6-3 3 6 6-5 5z"></path>
         </svg>
       </div>
       <div class="ml-4">
@@ -559,19 +512,8 @@
     <!-- Habilidad 6 -->
     <div class="flex items-start">
       <div class="flex-shrink-0">
-        <svg
-          xmlns="http://www.w3.org/2000/svg"
-          class="h-6 w-6 text-indigo-600"
-          fill="none"
-          viewBox="0 0 24 24"
-          stroke="currentColor"
-        >
-          <path
-            stroke-linecap="round"
-            stroke-linejoin="round"
-            stroke-width="2"
-            d="M9 12h6m2 0h.01M6 9h.01M6 15h.01"
-          />
+        <svg id="icon-spinner9name" width="32" height="32" viewBox="0 0 32 32" x="240" y="48">
+          <path fill="#03346e" d="M16 0c-8.711 0-15.796 6.961-15.995 15.624 0.185-7.558 5.932-13.624 12.995-13.624 7.18 0 13 6.268 13 14 0 1.657 1.343 3 3 3s3-1.343 3-3c0-8.837-7.163-16-16-16zM16 32c8.711 0 15.796-6.961 15.995-15.624-0.185 7.558-5.932 13.624-12.995 13.624-7.18 0-13-6.268-13-14 0-1.657-1.343-3-3-3s-3 1.343-3 3c0 8.837 7.163 16 16 16z"></path>
         </svg>
       </div>
       <div class="ml-4">
@@ -585,13 +527,13 @@
   </div>
       </section>
 
-     <section id="hobbies" class="bg-indigo-50 shadow-md rounded-lg p-6 mb-6">
+     <section id="hobbies" class="rounded-lg p-6 mb-6">
     <h3 class="text-2xl font-semibold mb-4 text-indigo-900">Hobbies</h3>
     <ul class="space-y-4">
       <li class="flex items-start gap-3">
-        <svg class="w-6 h-6 text-indigo-600" xmlns="http://www.w3.org/2000/svg" fill="currentColor" viewBox="0 0 24 24">
-          <path d="M12 0l3.528 10.833h11.409l-9.227 6.71 3.53 10.832-9.24-6.711-9.238 6.711 3.53-10.832-9.227-6.71h11.409z"/>
-        </svg>
+      <svg id="icon-terminal" width="16" height="16" viewBox="0 0 32 32" x="576" y="0">
+        <path fill="#03346e" d="M0 2v28h32v-28h-32zM30 28h-28v-24h28v24zM28 6h-24v20h24v-20zM14 16h-2v2h-2v2h-2v-2h2v-2h2v-2h-2v-2h-2v-2h2v2h2v2h2v2zM22 20h-6v-2h6v2z"></path>
+      </svg>
         <div>
           <strong class="text-indigo-800">Programar:</strong>
           <p class="text-gray-700">
@@ -600,8 +542,8 @@
         </div>
       </li>
       <li class="flex items-start gap-3">
-        <svg class="w-6 h-6 text-indigo-600" xmlns="http://www.w3.org/2000/svg" fill="currentColor" viewBox="0 0 24 24">
-          <path d="M12 0l3.528 10.833h11.409l-9.227 6.71 3.53 10.832-9.24-6.711-9.238 6.711 3.53-10.832-9.227-6.71h11.409z"/>
+        <svg id="icon-happyname" width="32" height="32" viewBox="0 0 32 32" x="480" y="48">
+          <path fill="#03346e" d="M16 32c8.837 0 16-7.163 16-16s-7.163-16-16-16-16 7.163-16 16 7.163 16 16 16zM16 3c7.18 0 13 5.82 13 13s-5.82 13-13 13-13-5.82-13-13 5.82-13 13-13zM16 18.711c3.623 0 7.070-0.963 10-2.654-0.455 5.576-4.785 9.942-10 9.942s-9.544-4.371-10-9.947c2.93 1.691 6.377 2.658 10 2.658zM8 11c0-1.657 0.895-3 2-3s2 1.343 2 3c0 1.657-0.895 3-2 3s-2-1.343-2-3zM20 11c0-1.657 0.895-3 2-3s2 1.343 2 3c0 1.657-0.895 3-2 3s-2-1.343-2-3z"></path>
         </svg>
         <div>
           <strong class="text-indigo-800">Familia:</strong>
@@ -611,8 +553,8 @@
         </div>
       </li>
       <li class="flex items-start gap-3">
-        <svg class="w-6 h-6 text-indigo-600" xmlns="http://www.w3.org/2000/svg" fill="currentColor" viewBox="0 0 24 24">
-          <path d="M12 0l3.528 10.833h11.409l-9.227 6.71 3.53 10.832-9.24-6.711-9.238 6.711 3.53-10.832-9.227-6.71h11.409z"/>
+        <svg id="icon-star-emptyname" width="32" height="32" viewBox="0 0 32 32" x="432" y="48">
+          <path fill="#03346e" d="M32 12.408l-11.056-1.607-4.944-10.018-4.944 10.018-11.056 1.607 8 7.798-1.889 11.011 9.889-5.199 9.889 5.199-1.889-11.011 8-7.798zM16 23.547l-6.983 3.671 1.334-7.776-5.65-5.507 7.808-1.134 3.492-7.075 3.492 7.075 7.807 1.134-5.65 5.507 1.334 7.776-6.983-3.671z"></path>
         </svg>
         <div>
           <strong class="text-indigo-800">Artes Marciales, Yoga y Pilates:</strong>
@@ -623,7 +565,7 @@
       </li>
     </ul>
 
-    <h3 class="text-2xl font-semibold mt-8 mb-4 text-indigo-900">Mi Esencia Personal</h3>
+    <h3 id="esencia" class="text-2xl font-semibold mt-8 mb-4 text-indigo-900">Mi Esencia Personal</h3>
     <div class="space-y-4">
       <div class="bg-white shadow-sm rounded-lg p-4">
         <strong class="text-indigo-800">Frase que me define:</strong>
@@ -685,7 +627,7 @@
       <!-- Columna 2: Contacto y Derechos Reservados -->
       <div class="flex flex-col justify-between">
         <div>
-          <h5 class="text-lg font-semibold mb-4">Contacto</h5>
+          <h5  id="contacto" class="text-lg font-semibold mb-4">Contacto</h5>
           <ul class="space-y-4">
             <li class="flex items-center">
               <a
