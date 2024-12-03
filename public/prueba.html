@@ -1,0 +1,256 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Kateryna Lysenko</title>
+    <link rel="stylesheet" href="./src/output.css" />
+    <style>
+      /* Animaciones flotantes con diferentes velocidades */
+      /* Animaciones flotantes con diferentes velocidades */
+      @keyframes float {
+        0%,
+        100% {
+          transform: translateY(0) scale(1);
+        }
+        50% {
+          transform: translateY(-30px) scale(1.1);
+        }
+      }
+
+      /* Velocidades de animación */
+      .animate-float-slow {
+        animation: float 6s ease-in-out infinite;
+      }
+
+      .animate-float-medium {
+        animation: float 4s ease-in-out infinite;
+      }
+
+      .animate-float-fast {
+        animation: float 3s ease-in-out infinite;
+      }
+    </style>
+  </head>
+  <body class="bg-gray-100">
+    <!-- Header -->
+    <header class="absolute inset-x-0 top-0 z-50">
+      <nav
+        class="flex items-center justify-between p-6 lg:px-8 shadow-md"
+        aria-label="Global"
+      >
+        <!-- Logo o Identidad -->
+        <div class="flex lg:flex-1">
+          <a href="index.html" class="-m-1.5 p-1.5 flex items-center">
+            <svg
+              id="icon-home"
+              class="w-6 h-6 text-gray-900"
+              viewBox="0 0 32 32"
+            >
+              <path
+                fill="currentColor"
+                d="M32 18.451l-16-12.42-16 12.42v-5.064l16-12.42 16 12.42zM28 18v12h-8v-8h-8v8h-8v-12l12-9z"
+              ></path>
+            </svg>
+            <span class="sr-only">Inicio</span>
+          </a>
+        </div>
+
+        <!-- Menú Principal para Desktop -->
+        <div class="hidden lg:flex lg:gap-x-12">
+          <a
+            href="index.html#education"
+            class="text-sm font-semibold text-gray-900 hover:underline"
+            >Educación</a
+          >
+          <a
+            href="index.html#skills"
+            class="text-sm font-semibold text-gray-900 hover:underline"
+            >Habilidades</a
+          >
+          <a
+            href="index.html#experience"
+            class="text-sm font-semibold text-gray-900 hover:underline"
+            >Experiencia</a
+          >
+          <a
+            href="index.html#contact"
+            class="text-sm font-semibold text-gray-900 hover:underline"
+            >Contacto</a
+          >
+        </div>
+
+        <!-- Botón de Menú para Mobile -->
+        <div class="flex lg:hidden">
+          <button
+            type="button"
+            class="-m-2.5 inline-flex items-center justify-center rounded-md p-2.5 text-gray-700"
+            aria-label="Abrir menú"
+            onclick="toggleMobileMenu()"
+          >
+            <svg
+              class="h-6 w-6"
+              fill="none"
+              viewBox="0 0 24 24"
+              stroke-width="1.5"
+              stroke="currentColor"
+            >
+              <path
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                d="M3.75 6.75h16.5M3.75 12h16.5m-16.5 5.25H12"
+              />
+            </svg>
+          </button>
+        </div>
+      </nav>
+    </header>
+    <div class="relative isolate px-6 pt-14 lg:px-8">
+      <!-- Fondo izquierdo -->
+      <div
+        class="absolute inset-x-0 -top-40 -z-10 transform-gpu overflow-hidden blur-3xl sm:-top-80"
+        aria-hidden="true"
+      >
+        <div
+          class="relative left-[calc(50%-11rem)] aspect-[1155/678] w-[36.125rem] -translate-x-1/2 rotate-[30deg] bg-gradient-to-tr from-[#ff80b5] to-[#9089fc] opacity-30 sm:left-[calc(50%-30rem)] sm:w-[72.1875rem]"
+          style="
+            clip-path: polygon(
+              74.1% 44.1%,
+              100% 61.6%,
+              97.5% 26.9%,
+              85.5% 0.1%,
+              80.7% 2%,
+              72.5% 32.5%,
+              60.2% 62.4%,
+              52.4% 68.1%,
+              47.5% 58.3%,
+              45.2% 34.5%,
+              27.5% 76.7%,
+              0.1% 64.9%,
+              17.9% 100%,
+              27.6% 76.8%,
+              76.1% 97.7%,
+              74.1% 44.1%
+            );
+          "
+        ></div>
+      </div>
+
+      <div
+        class="mx-auto max-w-7xl grid grid-cols-1 lg:grid-cols-2 gap-8 py-32 sm:py-48 lg:py-56"
+      >
+        <!-- Parte izquierda: Texto -->
+        <div class="text-left">
+          <h1
+            class="text-balance text-5xl font-semibold tracking-tight text-gray-900 sm:text-7xl"
+          >
+            Kateryna Lysenko <br />Java Developer
+          </h1>
+          <p class="mt-8 text-lg font-medium text-gray-500 sm:text-xl">
+            Desarrolladora de software con formación en Programación con
+            Lenguajes Orientados a Objetos y Bases de Datos Relacionales. Aunque
+            tengo experiencia en frontend, mi enfoque principal es el desarrollo
+            backend.
+          </p>
+          <div class="mt-10">
+            <a
+              href="#"
+              class="rounded-md bg-indigo-600 px-4 py-2 text-sm font-semibold text-white shadow-md hover:bg-indigo-500"
+            >
+              Conóceme
+            </a>
+          </div>
+        </div>
+
+        <!-- Parte derecha: Galería flotante -->
+        <div class="relative">
+          <!-- Contenedor de la galería -->
+          <div class="grid grid-cols-4 gap-4 lg:ml-auto">
+            <!-- Primera fila (4 imágenes) -->
+            <div class="animate-float-slow">
+              <img
+                src="./images/foto_proyecto_para_portfolio.png"
+                alt="Imagen 1"
+                class="w-40 h-40 object-cover rounded-md shadow-lg hover:scale-110 transition-transform duration-300"
+              />
+            </div>
+            <div class="animate-float-medium">
+              <img
+                src="./images/foto_proyecto_para_portfolio1.png"
+                alt="Imagen 2"
+                class="w-40 h-40 object-cover rounded-md shadow-lg hover:scale-110 transition-transform duration-300"
+              />
+            </div>
+            <div class="animate-float-fast">
+              <img
+                src="./images/foto_proyecto_para_portfolio2.png"
+                alt="Imagen 3"
+                class="w-40 h-40 object-cover rounded-md shadow-lg hover:scale-110 transition-transform duration-300"
+              />
+            </div>
+            <div class="animate-float-medium">
+              <img
+                src="./images/foto_proyecto_para_portfolio3.png"
+                alt="Imagen 4"
+                class="w-40 h-40 object-cover rounded-md shadow-lg hover:scale-110 transition-transform duration-300"
+              />
+            </div>
+
+            <!-- Segunda fila (4 imágenes) -->
+            <div class="animate-float-fast">
+              <img
+                src="./images/foto_proyecto_para_portfolio4.png"
+                alt="Imagen 5"
+                class="w-40 h-40 object-cover rounded-md shadow-lg hover:scale-110 transition-transform duration-300"
+              />
+            </div>
+            <div class="animate-float-slow">
+              <img
+                src="./images/foto_proyecto_para_portfolio5.png"
+                alt="Imagen 6"
+                class="w-40 h-40 object-cover rounded-md shadow-lg hover:scale-110 transition-transform duration-300"
+              />
+            </div>
+            <div class="animate-float-medium">
+              <img
+                src="./images/foto_proyecto_para_portfolio6.png"
+                alt="Imagen 7"
+                class="w-40 h-40 object-cover rounded-md shadow-lg hover:scale-110 transition-transform duration-300"
+              />
+            </div>
+            <div class="animate-float-fast">
+              <img
+                src="./images/foto_proyecto_para_portfolio7.png"
+                alt="Imagen 8"
+                class="w-40 h-40 object-cover rounded-md shadow-lg hover:scale-110 transition-transform duration-300"
+              />
+            </div>
+
+            <!-- Tercera fila (2 imágenes centradas) -->
+            <div class="animate-float-medium col-span-2 mx-auto">
+              <img
+                src="./images/bd.jpeg"
+                alt="Imagen 9"
+                class="w-40 h-40 object-cover rounded-md shadow-lg hover:scale-110 transition-transform duration-300"
+              />
+            </div>
+            <div class="animate-float-slow col-span-2 mx-auto">
+              <img
+                src="./images/imagen_java.jpeg"
+                alt="Imagen 10"
+                class="w-40 h-40 object-cover rounded-md shadow-lg hover:scale-110 transition-transform duration-300"
+              />
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <script>
+      function toggleMobileMenu() {
+        const menu = document.getElementById("mobile-menu");
+        menu.classList.toggle("hidden");
+      }
+    </script>
+  </body>
+</html>
