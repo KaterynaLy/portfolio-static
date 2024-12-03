@@ -4,48 +4,129 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Kateryna Lysenko - Desarrolladora Java</title>
-    <link rel="stylesheet" href="./src/styles.css" />
     <link rel="stylesheet" href="./src/output.css" />
   </head>
-  <body class="bg-gray-100 text-gray-800">
-    <header
-      class="bg-gradient-to-r from-blue-500 to-indigo-500 text-white p-6 text-center"
+ <body class="relative">
+    <!-- Fondo global -->
+    <div
+      class="absolute inset-0 -z-10 transform-gpu overflow-hidden blur-3xl"
+      aria-hidden="true"
     >
+      <div
+        class="relative left-[calc(50%-11rem)] aspect-[1155/678] w-[36.125rem] -translate-x-1/2 rotate-[30deg] bg-gradient-to-tr from-[#ff80b5] to-[#9089fc] opacity-30 sm:left-[calc(50%-30rem)] sm:w-[72.1875rem]"
+        style="
+          clip-path: polygon(
+            74.1% 44.1%,
+            100% 61.6%,
+            97.5% 26.9%,
+            85.5% 0.1%,
+            80.7% 2%,
+            72.5% 32.5%,
+            60.2% 62.4%,
+            52.4% 68.1%,
+            47.5% 58.3%,
+            45.2% 34.5%,
+            27.5% 76.7%,
+            0.1% 64.9%,
+            17.9% 100%,
+            27.6% 76.8%,
+            76.1% 97.7%,
+            74.1% 44.1%
+          );
+        "
+      ></div>
+    </div>
+    <!-- Header -->
+    <header class="bg-gray-900 text-white p-6 shadow-md relative z-20">
+      <nav class="flex items-center justify-between lg:px-8" aria-label="Global">
+        <!-- Logo o Identidad -->
+        <div class="flex lg:flex-1">
+          <a href="hero.html" class="-m-1.5 p-1.5 flex items-center">
+            <svg id="icon-home" class="w-6 h-6 text-white" viewBox="0 0 32 32">
+              <path
+                fill="currentColor"
+                d="M32 18.451l-16-12.42-16 12.42v-5.064l16-12.42 16 12.42zM28 18v12h-8v-8h-8v8h-8v-12l12-9z"
+              ></path>
+            </svg>
+            <span class="sr-only">Inicio</span>
+          </a>
+        </div>
+
+        <!-- Menú Principal para Desktop -->
+        <div class="hidden lg:flex lg:gap-x-12">
+          <a
+            href="#education"
+            class="text-sm font-semibold text-white hover:underline"
+            >Educación</a
+          >
+          <a
+            href="#habilidades"
+            class="text-sm font-semibold text-white hover:underline"
+            >Habilidades</a
+          >
+          <a
+            href="#experiencia"
+            class="text-sm font-semibold text-white hover:underline"
+            >Experiencia</a
+          >
+          <a
+            href="#contact"
+            class="text-sm font-semibold text-white hover:underline"
+            >Contacto</a
+          >
+        </div>
+    <!-- Botón de Menú para Mobile -->
+    <div class="flex lg:hidden">
+      <button
+        type="button"
+        class="-m-2.5 inline-flex items-center justify-center rounded-md p-2.5 text-white hover:bg-gray-800"
+        aria-label="Abrir menú"
+        onclick="toggleMobileMenu()"
+      >
+        <svg
+          class="h-6 w-6"
+          fill="none"
+          viewBox="0 0 24 24"
+          stroke-width="1.5"
+          stroke="currentColor"
+        >
+          <path
+            stroke-linecap="round"
+            stroke-linejoin="round"
+            d="M3.75 6.75h16.5M3.75 12h16.5m-16.5 5.25H12"
+          />
+        </svg>
+      </button>
+    </div>
+
+      <!-- Menú Móvil -->
+      <div
+        id="mobile-menu"
+        class="hidden fixed inset-0 bg-gray-900 bg-opacity-75 z-50 flex flex-col items-center justify-center space-y-4 text-white">
+        <a href="#education" class="text-lg font-semibold hover:underline">Educación</a>
+        <a href="#skills" class="text-lg font-semibold hover:underline">Habilidades</a>
+        <a href="#experience" class="text-lg font-semibold hover:underline">Experiencia</a>
+        <a href="#contact" class="text-lg font-semibold hover:underline">Contacto</a>
+        <button
+          type="button"
+          class="mt-4 bg-indigo-600 px-4 py-2 rounded-md hover:bg-indigo-500"
+          onclick="toggleMobileMenu()"
+        >
+          Cerrar Menú
+        </button>
+      </div>
+    </nav>
+    </header>
+     <!-- Contenido Principal -->
+    <main class="relative z-10 max-w-4xl mx-auto p-6">
       <h1 class="text-4xl font-bold">Kateryna Lysenko</h1>
       <h2 class="text-xl">Desarrolladora Java</h2>
       <p class="mt-2">
         Recientemente formada en tecnologías de la información, especializada en
         Java, Spring Boot, MySQL y JavaScript.
       </p>
-    </header>
-    <nav class="bg-white shadow-md p-4 flex justify-between items-center">
-      <div class="hidden lg:flex lg:gap-x-12">
-        <a
-          href="#educacion"
-          class="text-sm font-semibold text-gray-900 hover:underline"
-          >Educación</a
-        >
-        <a
-          href="#habilidades"
-          class="text-sm font-semibold text-gray-900 hover:underline"
-          >Habilidades</a
-        >
-        <a
-          href="#experiencia"
-          class="text-sm font-semibold text-gray-900 hover:underline"
-          >Experiencia Laboral</a
-        >
-        <a
-          href="#contacto"
-          class="text-sm font-semibold text-gray-900 hover:underline"
-          >Contacto</a
-        >
-      </div>
-    </nav>
-
-    <main class="max-w-4xl mx-auto p-6">
       <section id="objectivo" class="bg-white shadow-lg rounded-lg p-6 mb-6">
-        <h3 class="text-2xl font-semibold mb-4 text-gray-800">Objetivo</h3>
+        <h3 class="text-2xl font-semibold mb-4 text-indigo-900">Objetivo</h3>
         <p class="text-gray-600">
           Mi objetivo es unirme a un equipo donde pueda combinar mi experiencia
           comercial con mis habilidades técnicas, desarrollando soluciones
@@ -58,159 +139,527 @@
         </p>
       </section>
 
+      <!-- Experiencia Laboral -->
       <section id="experiencia" class="bg-white shadow-lg rounded-lg p-6 mb-6">
-        <h3 class="text-2xl font-semibold mb-4 text-gray-800">
-          Experiencia Laboral
-        </h3>
-        <h4 class="text-lg font-medium text-gray-700">
-          Cambio de profesión - Reskilling en TI
-        </h4>
-        <p class="text-gray-600">2023 - 2024</p>
-        <p class="text-gray-600">
-          Periodo de transición profesional dedicado a la formación intensiva en
-          tecnologías de la información.
-        </p>
+        <h3 class="text-2xl font-semibold mb-4 text-indigo-900">Experiencia Laboral</h3>
 
-        <h4>KAM (Jefe de Sección) - Mango</h4>
-        <p>Noviembre 2016 – Febrero 2023</p>
-        <p>
-          Implementación de estrategias de ventas, negociación de contratos,
-          coordinación interna y análisis de mercado.
-        </p>
-        <p>
-          <strong>Logros:</strong> Incremento de ventas L4L hasta un 22% durante
-          la temporada de COVID-19.
-        </p>
+        <!-- Reskilling en TI -->
+        <div class="mb-6">
+          <h4 class="text-lg font-medium text-gray-700">Transición Profesional a IT</h4>
+          <p class="text-gray-600 font-semibold">2023 - 2024</p>
+          <p class="text-gray-600">
+            Período de dedicación intensiva a la formación en tecnologías de la
+            información, mientras gestionaba un proyecto familiar personal.
+          </p>
+        </div>
 
-        <h4>Coordinadora Comercial - Exportaciones Catanzaro SpA</h4>
-        <p>Abril 2015 – Octubre 2016</p>
-        <p>
-          Gestión de exportaciones internacionales y coordinación de despachos.
-        </p>
-        <p>
-          <strong>Logros:</strong> Optimización de procesos internos y gestión
-          de recursos humanos, logrando una eficiencia de hasta un 30%.
-        </p>
+        <!-- KAM - Mango -->
+        <div class="mb-6">
+          <h4 class="text-lg font-medium text-gray-700">KAM (Jefe de Sección) - Mango</h4>
+          <p class="text-gray-600 font-semibold">Noviembre 2016 – Febrero 2023</p>
+          <p class="text-gray-600">Barcelona, España</p>
+          <ul class="list-disc pl-6 text-gray-600 mt-2">
+            <li>
+              Identificación y gestión de oportunidades de ventas en mercados
+              internacionales (CIS, Balcanes, Bálticos), con una facturación anual
+              superior a 20M €.
+            </li>
+            <li>
+              Implementación del proyecto Nexus, una plataforma de ventas al por
+              mayor online.
+            </li>
+            <li>
+              Análisis y seguimiento de KPIs para garantizar el cumplimiento de
+              objetivos de rendimiento.
+            </li>
+            <li>
+              Gestión de presupuestos anuales, cierre de ventas y planificación de
+              marketing estratégico.
+            </li>
+            <li>Gestión de excedentes al cierre de temporada.</li>
+          </ul>
+          <p class="text-gray-700 font-semibold mt-2">Logros:</p>
+          <ul class="list-disc pl-6 text-gray-600">
+            <li>Crecimiento del 22% interanual en ventas L4L durante la pandemia.</li>
+          </ul>
+        </div>
 
-        <h4>Responsable de Compras - ATB - MARKET LLC</h4>
-        <p>Febrero 2008 – Noviembre 2014</p>
-        <p>
-          Gestión de importación y compras internacionales para una cadena de
-          suministro de 900 tiendas. Negociación con proveedores y fábricas de
-          Asia. Coordinación de importaciones y cálculo de costes.
-        </p>
-        <p>
-          <strong>Logros:</strong> Mantenimiento de precios bajos y alta calidad
-          de productos, entrega puntual y cooperación con el departamento de
-          marketing.
-        </p>
-        <h4>Idiomas</h4>
-        <ul>
-          <li>Español: Avanzado, Inglés: Avanzado</li>
-          <li>Ucraniano: Nativo, Ruso: Avanzado</li>
-        </ul>
-        <ul>
-          Referencias: Disponibles a solicitud.
-        </ul>
+        <!-- Coordinadora Comercial - Catanzaro SpA -->
+        <div class="mb-6">
+          <h4 class="text-lg font-medium text-gray-700">
+            Coordinadora Comercial - Exportaciones Catanzaro SpA
+          </h4>
+          <p class="text-gray-600 font-semibold">Abril 2015 – Octubre 2016</p>
+          <p class="text-gray-600">Santiago de Chile, Chile</p>
+          <ul class="list-disc pl-6 text-gray-600 mt-2">
+            <li>
+              Gestión de exportaciones internacionales de productos alimenticios.
+            </li>
+            <li>
+              Coordinación de despachos y seguimiento del ciclo logístico desde el
+              inicio hasta la entrega final.
+            </li>
+            <li>
+              Comunicación efectiva con clientes internacionales como Coca-Cola,
+              PepsiCo, entre otros.
+            </li>
+          </ul>
+          <p class="text-gray-700 font-semibold mt-2">Logros:</p>
+          <ul class="list-disc pl-6 text-gray-600">
+            <li>Optimización de procesos internos, mejorando la eficiencia en un 30%.</li>
+          </ul>
+        </div>
+
+        <!-- Responsable de Compras - ATB-Market LLC -->
+        <div class="mb-6">
+          <h4 class="text-lg font-medium text-gray-700">
+            Responsable de Compras - ATB-Market LLC
+          </h4>
+          <p class="text-gray-600 font-semibold">Febrero 2008 – Noviembre 2014</p>
+          <p class="text-gray-600">Ucrania / China</p>
+          <ul class="list-disc pl-6 text-gray-600 mt-2">
+            <li>
+              Negociación con proveedores y fábricas en Asia para una cadena de 900
+              tiendas.
+            </li>
+            <li>
+              Participación en ferias internacionales (Hong Kong, Cantón, Yiwu) para
+              asegurar la mejor calidad y precios.
+            </li>
+            <li>
+              Coordinación de compras de productos no alimentarios como ropa,
+              calzado, artículos para el hogar y más.
+            </li>
+          </ul>
+          <p class="text-gray-700 font-semibold mt-2">Logros:</p>
+          <ul class="list-disc pl-6 text-gray-600">
+            <li>
+              Gestión efectiva de exportaciones, adaptándome a cambios financieros y
+              necesidades del mercado interno.
+            </li>
+          </ul>
+        </div>
       </section>
+
+      <!-- Idiomas -->
+      <section id="idiomas" class="shadow-lg rounded-lg p-6 mb-6">
+        <h3 class="text-2xl font-semibold mb-4 text-indigo-900">Idiomas</h3>
+        <ul class="list-disc pl-6 text-gray-700 space-y-2">
+          <li class="flex items-center">
+            <img
+              src="./images/es_bandera.jpeg"
+              alt="Español"
+              class="w-5 h-5 mr-2 rounded-full"
+            />
+            Español: Avanzado
+          </li>
+          <li class="flex items-center">
+            <img
+              src="./images/en_bandera.jpeg"
+              alt="Inglés"
+              class="w-5 h-5 mr-2 rounded-full"
+            />
+            Inglés: Avanzado
+          </li>
+          <li class="flex items-center">
+            <img
+              src="./images/ua_bandera.jpeg"
+              alt="Ucraniano"
+              class="w-5 h-5 mr-2 rounded-full"
+            />
+            Ucraniano: Nativo
+          </li>
+          <li class="flex items-center">
+            <img
+              src="./images/ru_bandera.png"
+              alt="Ruso"
+              class="w-5 h-5 mr-2 rounded-full"
+            />
+            Ruso: Avanzado
+          </li>
+        </ul>
+        <p class="mt-4 text-gray-700">Referencias disponibles a solicitud.</p>
+      </section>
+
+
       <section id="educacion" class="bg-white shadow-lg rounded-lg p-6 mb-6">
-        <h3 class="text-2xl font-semibold mb-4 text-gray-800">Educación</h3>
-        <ul class="list-disc pl-6 text-gray-600">
-          <li>
+    <h3 class="text-2xl font-semibold mb-4 text-indigo-900 border-b border-gray-200 pb-2">
+      Educación
+    </h3>
+    <ul class="space-y-6">
+      <!-- Item 1 -->
+      <li class="flex items-start">
+        <div class="flex-shrink-0">
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            class="h-6 w-6 text-indigo-600"
+            fill="none"
+            viewBox="0 0 24 24"
+            stroke="currentColor"
+          >
+            <path
+              stroke-linecap="round"
+              stroke-linejoin="round"
+              stroke-width="2"
+              d="M12 6v6h4M4 6v6m16-6v6M4 18v6m8-6v6m8-6v6"
+            />
+          </svg>
+        </div>
+        <div class="ml-4">
+          <h4 class="text-lg font-medium text-gray-800">
             FP Programación con Lenguajes Orientados a Objetos - Ironhack, 2024
-          </li>
-          <a href="./assets/Título_TECH_CFO.pdf" target="_blank"
+          </h4>
+          <a
+            href="./assets/Título_TECH_CFO.pdf"
+            target="_blank"
+            class="text-indigo-600 text-sm hover:underline"
             >Ver el documento</a
           >
-          <li>Fullstack PHP - Barcelona Activa, 2023</li>
-          <li>MBA en Dirección Financiera - TECH CFO, 2023</li>
-          <a href="./assets/Título_TECH_CFO.pdf" target="_blank"
+        </div>
+      </li>
+      <!-- Item 2 -->
+      <li class="flex items-start">
+        <div class="flex-shrink-0">
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            class="h-6 w-6 text-indigo-600"
+            fill="none"
+            viewBox="0 0 24 24"
+            stroke="currentColor"
+          >
+            <path
+              stroke-linecap="round"
+              stroke-linejoin="round"
+              stroke-width="2"
+              d="M3 10h18M4 6h16M4 14h16"
+            />
+          </svg>
+        </div>
+        <div class="ml-4">
+          <h4 class="text-lg font-medium text-gray-800">
+            Fullstack PHP - Barcelona Activa, 2023
+          </h4>
+        </div>
+      </li>
+      <!-- Item 3 -->
+      <li class="flex items-start">
+        <div class="flex-shrink-0">
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            class="h-6 w-6 text-indigo-600"
+            fill="none"
+            viewBox="0 0 24 24"
+            stroke="currentColor"
+          >
+            <path
+              stroke-linecap="round"
+              stroke-linejoin="round"
+              stroke-width="2"
+              d="M12 4v16m-8-8h16"
+            />
+          </svg>
+        </div>
+        <div class="ml-4">
+          <h4 class="text-lg font-medium text-gray-800">
+            MBA en Dirección Financiera - TECH CFO, 2023
+          </h4>
+          <a
+            href="./assets/Título_TECH_CFO.pdf"
+            target="_blank"
+            class="text-indigo-600 text-sm hover:underline"
             >Ver el documento</a
           >
-          <li>Postgrado en Ingeniería Mecánica - Ucrania, 2008</li>
-          <a href="docs/mi_documento.pdf" target="_blank">Ver el documento</a>
-          <p>
-            HERRAMIENTAS Y PLATAFORMAS TÉCNICAS Herramientas BI de Datos:
-            Experiencia en visualización y análisis de datos para la toma de
-            decisiones. Confluence & Jira: Habilidad en documentación de
-            proyectos, colaboración y gestión ágil de flujos de trabajo. Cobol:
-            Competencia en operaciones de sistemas heredados. SAP: nivel
-            usuario, planificación de recursos y procesos empresariales.
-          </p>
-        </ul>
-      </section>
-      <section id="habilidades">
-        <h3 class="text-2xl font-semibold mb-4 text-gray-800">Habilidades</h3>
-        <p>
-          COMPETENCIAS Habilidades de Comunicación e Interpersonales: Capacidad
-          para interactuar eficazmente con clientes, equipos y partes
-          interesadas a todos los niveles. Dominio del Paquete MS Office: Excel
-          (Avanzado): Experta en análisis de datos, creación de macros,
-          tablas/gráficos dinámicos, agrupación de datos, fórmulas avanzadas y
-          representaciones gráficas. PowerPoint (Avanzado): Experiencia en el
-          diseño de presentaciones impactantes, plantillas, formateo de
-          diapositivas e integración de medios/videos. Colaboración en Equipo:
-          Capacidad para trabajar eficazmente en equipos multifuncionales.
-          Resolución de Problemas: Mentalidad analítica enfocada en ofrecer
-          soluciones prácticas. Liderazgo: Habilidad comprobada para guiar y
-          motivar equipos hacia el logro de metas. Atención al Detalle:
-          Consistencia en garantizar precisión y calidad en todas las tareas.
-          Habilidades Organizativas: Experta en gestionar múltiples tareas y
-          prioridades de manera eficiente. Trabajo Bajo Presión: Capacidad para
-          prosperar en entornos dinámicos y de alto estrés, manteniendo
-          resultados de calidad. Flexibilidad con Clientes: Adaptable a las
-          necesidades de clientes de alto perfil. Negociación y Adquisiciones:
-          Experiencia en negociaciones entre compradores y proveedores, y
-          adquisiciones estratégicas. Comunicación Interdepartamental e
-          Internacional: Experiencia en coordinación interna entre departamentos
-          y con socios internacionales en múltiples idiomas.
+        </div>
+      </li>
+      <!-- Item 4 -->
+      <li class="flex items-start">
+        <div class="flex-shrink-0">
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            class="h-6 w-6 text-indigo-600"
+            fill="none"
+            viewBox="0 0 24 24"
+            stroke="currentColor"
+          >
+            <path
+              stroke-linecap="round"
+              stroke-linejoin="round"
+              stroke-width="2"
+              d="M6 4h12M6 20h12M6 12h12"
+            />
+          </svg>
+        </div>
+        <div class="ml-4">
+          <h4 class="text-lg font-medium text-gray-800">
+            Postgrado en Ingeniería Mecánica - Ucrania, 2008
+          </h4>
+          <a
+            href="docs/mi_documento.pdf"
+            target="_blank"
+            class="text-indigo-600 text-sm hover:underline"
+            >Ver el documento</a
+          >
+        </div>
+      </li>
+    </ul>
+    <div class="mt-6 bg-indigo-50 rounded-lg p-4">
+      <h4 class="text-lg font-semibold text-indigo-900">
+        Herramientas y Plataformas Técnicas
+      </h4>
+      <p class="text-sm text-gray-700 mt-2">
+        <strong>Herramientas BI de Datos:</strong> Experiencia en visualización y
+        análisis de datos para la toma de decisiones.<br />
+        <strong>Confluence & Jira:</strong> Habilidad en documentación de
+        proyectos y gestión ágil.<br />
+        <strong>Cobol:</strong> Competencia en operaciones de sistemas
+        heredados.<br />
+        <strong>SAP:</strong> Nivel usuario para planificación de recursos y
+        procesos empresariales.
+      </p>
+    </div>
+    </section>
+
+      <section id="habilidades" class="bg-gray-50 shadow-lg rounded-lg p-6 mb-6">
+      <h3 class="text-2xl font-semibold mb-4 text-indigo-900 border-b border-gray-200 pb-2">
+        Habilidades
+      </h3>
+      <div class="grid gap-6 md:grid-cols-2">
+    <!-- Habilidad 1 -->
+    <div class="flex items-start">
+      <div class="flex-shrink-0">
+        <svg
+          xmlns="http://www.w3.org/2000/svg"
+          class="h-6 w-6 text-indigo-600"
+          fill="none"
+          viewBox="0 0 24 24"
+          stroke="currentColor"
+        >
+          <path
+            stroke-linecap="round"
+            stroke-linejoin="round"
+            stroke-width="2"
+            d="M13 16h-1v-4h-3l4-8v6h3l-4 8z"
+          />
+        </svg>
+      </div>
+      <div class="ml-4">
+        <h4 class="text-lg font-medium text-gray-800">Comunicación</h4>
+        <p class="text-sm text-gray-600">
+          Capacidad para interactuar eficazmente con clientes, equipos y partes
+          interesadas a todos los niveles.
         </p>
+      </div>
+    </div>
+    <!-- Habilidad 2 -->
+    <div class="flex items-start">
+      <div class="flex-shrink-0">
+        <svg
+          xmlns="http://www.w3.org/2000/svg"
+          class="h-6 w-6 text-indigo-600"
+          fill="none"
+          viewBox="0 0 24 24"
+          stroke="currentColor"
+        >
+          <path
+            stroke-linecap="round"
+            stroke-linejoin="round"
+            stroke-width="2"
+            d="M9.75 6l-3 3m0 0l3 3m-3-3h6a3 3 0 010 6h-2m2-6a3 3 0 100-6h-2m0 0h-3a3 3 0 010 6h3"
+          />
+        </svg>
+      </div>
+      <div class="ml-4">
+        <h4 class="text-lg font-medium text-gray-800">Dominio MS Office</h4>
+        <p class="text-sm text-gray-600">
+          <strong>Excel:</strong> Avanzado, con experiencia en análisis de datos,
+          macros, tablas dinámicas y gráficos. <br />
+          <strong>PowerPoint:</strong> Diseño de presentaciones impactantes e
+          integración multimedia.
+        </p>
+      </div>
+    </div>
+    <!-- Habilidad 3 -->
+    <div class="flex items-start">
+      <div class="flex-shrink-0">
+        <svg
+          xmlns="http://www.w3.org/2000/svg"
+          class="h-6 w-6 text-indigo-600"
+          fill="none"
+          viewBox="0 0 24 24"
+          stroke="currentColor"
+        >
+          <path
+            stroke-linecap="round"
+            stroke-linejoin="round"
+            stroke-width="2"
+            d="M5 13l4 4L19 7"
+          />
+        </svg>
+      </div>
+      <div class="ml-4">
+        <h4 class="text-lg font-medium text-gray-800">Liderazgo y Trabajo en Equipo</h4>
+        <p class="text-sm text-gray-600">
+          Habilidad para guiar y motivar equipos hacia metas, colaborando
+          eficientemente en entornos multifuncionales.
+        </p>
+      </div>
+    </div>
+    <!-- Habilidad 4 -->
+    <div class="flex items-start">
+      <div class="flex-shrink-0">
+        <svg
+          xmlns="http://www.w3.org/2000/svg"
+          class="h-6 w-6 text-indigo-600"
+          fill="none"
+          viewBox="0 0 24 24"
+          stroke="currentColor"
+        >
+          <path
+            stroke-linecap="round"
+            stroke-linejoin="round"
+            stroke-width="2"
+            d="M15 17h5l-1.405 1.405A2.032 2.032 0 0118.158 19H6a2 2 0 01-2-2V7c0-.271.027-.534.078-.79L4 7h7l1-3h4c1.075 0 2 .725 2 1.617V17z"
+          />
+        </svg>
+      </div>
+      <div class="ml-4">
+        <h4 class="text-lg font-medium text-gray-800">Resolución de Problemas</h4>
+        <p class="text-sm text-gray-600">
+          Mentalidad analítica enfocada en encontrar soluciones prácticas y
+          efectivas bajo presión.
+        </p>
+      </div>
+    </div>
+    <!-- Habilidad 5 -->
+    <div class="flex items-start">
+      <div class="flex-shrink-0">
+        <svg
+          xmlns="http://www.w3.org/2000/svg"
+          class="h-6 w-6 text-indigo-600"
+          fill="none"
+          viewBox="0 0 24 24"
+          stroke="currentColor"
+        >
+          <path
+            stroke-linecap="round"
+            stroke-linejoin="round"
+            stroke-width="2"
+            d="M6 9l6 6 6-6"
+          />
+        </svg>
+      </div>
+      <div class="ml-4">
+        <h4 class="text-lg font-medium text-gray-800">Gestión Organizativa</h4>
+        <p class="text-sm text-gray-600">
+          Capacidad para gestionar múltiples tareas, cumplir plazos y garantizar
+          resultados de alta calidad.
+        </p>
+      </div>
+    </div>
+    <!-- Habilidad 6 -->
+    <div class="flex items-start">
+      <div class="flex-shrink-0">
+        <svg
+          xmlns="http://www.w3.org/2000/svg"
+          class="h-6 w-6 text-indigo-600"
+          fill="none"
+          viewBox="0 0 24 24"
+          stroke="currentColor"
+        >
+          <path
+            stroke-linecap="round"
+            stroke-linejoin="round"
+            stroke-width="2"
+            d="M9 12h6m2 0h.01M6 9h.01M6 15h.01"
+          />
+        </svg>
+      </div>
+      <div class="ml-4">
+        <h4 class="text-lg font-medium text-gray-800">Negociación y Adquisiciones</h4>
+        <p class="text-sm text-gray-600">
+          Experiencia en negociaciones estratégicas entre compradores y
+          proveedores, alineando objetivos para el éxito.
+        </p>
+      </div>
+    </div>
+  </div>
       </section>
-      <section id="hobbies">
-        <h4>Hobbies</h4>
-        <ul>
-          <li>
-            <strong>Programar:</strong> Apasionada por resolver problemas y
-            crear soluciones innovadoras a través del código.
-          </li>
-          <li>
-            <strong>Familia:</strong> Valoro pasar tiempo de calidad con mis
-            seres queridos.
-          </li>
-          <li>
-            <strong>Artes Marciales, Yoga y Pilates:</strong> Compromiso con la
-            disciplina, el bienestar físico y el crecimiento personal.
-          </li>
-        </ul>
-        <h4>Mi Esencia Personal</h4>
-        <ul>
-          <p>
-            <strong>Frase que me define:</strong> "El éxito es la suma de
-            pequeños esfuerzos repetidos día tras día." Refleja mi perseverancia
-            y enfoque en el crecimiento continuo, tanto profesional como
-            personal.
+
+     <section id="hobbies" class="bg-indigo-50 shadow-md rounded-lg p-6 mb-6">
+    <h3 class="text-2xl font-semibold mb-4 text-indigo-900">Hobbies</h3>
+    <ul class="space-y-4">
+      <li class="flex items-start gap-3">
+        <svg class="w-6 h-6 text-indigo-600" xmlns="http://www.w3.org/2000/svg" fill="currentColor" viewBox="0 0 24 24">
+          <path d="M12 0l3.528 10.833h11.409l-9.227 6.71 3.53 10.832-9.24-6.711-9.238 6.711 3.53-10.832-9.227-6.71h11.409z"/>
+        </svg>
+        <div>
+          <strong class="text-indigo-800">Programar:</strong>
+          <p class="text-gray-700">
+            Apasionada por resolver problemas y crear soluciones innovadoras a través del código.
           </p>
-          <p>
-            <strong>Un libro de los favoritos</strong>"En las montañas de la
-            locura” de H.P. Lovecraft" - combina misterio, ciencia y
-            exploración, elementos que resuenan con mi pasión por descubrir lo
-            desconocido y enfrentar desafíos con valentía. La historia de una
-            expedición a la Antártida en busca de antiguas civilizaciones.
+        </div>
+      </li>
+      <li class="flex items-start gap-3">
+        <svg class="w-6 h-6 text-indigo-600" xmlns="http://www.w3.org/2000/svg" fill="currentColor" viewBox="0 0 24 24">
+          <path d="M12 0l3.528 10.833h11.409l-9.227 6.71 3.53 10.832-9.24-6.711-9.238 6.711 3.53-10.832-9.227-6.71h11.409z"/>
+        </svg>
+        <div>
+          <strong class="text-indigo-800">Familia:</strong>
+          <p class="text-gray-700">
+            Valoro pasar tiempo de calidad con mis seres queridos.
           </p>
-          <p>
-            <strong>Lugar especial:</strong>La playa Bolonia de Cádiz con sus
-            ruinas romanas. Este lugar combina la serenidad del mar con la
-            riqueza histórica, inspirándome a reflexionar sobre el pasado
-            mientras sigo avanzando hacia el futuro.
+        </div>
+      </li>
+      <li class="flex items-start gap-3">
+        <svg class="w-6 h-6 text-indigo-600" xmlns="http://www.w3.org/2000/svg" fill="currentColor" viewBox="0 0 24 24">
+          <path d="M12 0l3.528 10.833h11.409l-9.227 6.71 3.53 10.832-9.24-6.711-9.238 6.711 3.53-10.832-9.227-6.71h11.409z"/>
+        </svg>
+        <div>
+          <strong class="text-indigo-800">Artes Marciales, Yoga y Pilates:</strong>
+          <p class="text-gray-700">
+            Compromiso con la disciplina, el bienestar físico y el crecimiento personal.
           </p>
-          <strong>Canción que sigue gustando tras años: </strong
-          >"Wind of Change" de Scorpions. Esta canción refleja mi espíritu de
-          transformación, resiliencia y mi capacidad para encontrar nuevas
-          oportunidades en cada cambio que la vida presenta.
-        </ul>
-      </section>
+        </div>
+      </li>
+    </ul>
+
+    <h3 class="text-2xl font-semibold mt-8 mb-4 text-indigo-900">Mi Esencia Personal</h3>
+    <div class="space-y-4">
+      <div class="bg-white shadow-sm rounded-lg p-4">
+        <strong class="text-indigo-800">Frase que me define:</strong>
+        <p class="text-gray-700 mt-2">
+          "El éxito es la suma de pequeños esfuerzos repetidos día tras día."
+          Refleja mi perseverancia y enfoque en el crecimiento continuo, tanto profesional como personal.
+        </p>
+      </div>
+      <div class="bg-white shadow-sm rounded-lg p-4">
+        <strong class="text-indigo-800">Un libro de los favoritos:</strong>
+        <p class="text-gray-700 mt-2">
+          "En las montañas de la locura” de H.P. Lovecraft" - combina misterio,
+          ciencia y exploración, elementos que resuenan con mi pasión por descubrir lo desconocido
+          y enfrentar desafíos con valentía.
+        </p>
+      </div>
+      <div class="bg-white shadow-sm rounded-lg p-4">
+        <strong class="text-indigo-800">Lugar especial:</strong>
+        <p class="text-gray-700 mt-2">
+          La playa Bolonia de Cádiz con sus ruinas romanas. Este lugar combina la serenidad del
+          mar con la riqueza histórica, inspirándome a reflexionar sobre el pasado mientras sigo
+          avanzando hacia el futuro.
+        </p>
+      </div>
+      <div class="bg-white shadow-sm rounded-lg p-4">
+        <strong class="text-indigo-800">Canción que sigue gustando tras años:</strong>
+        <p class="text-gray-700 mt-2">
+          "Wind of Change" de Scorpions. Esta canción refleja mi espíritu de transformación,
+          resiliencia y mi capacidad para encontrar nuevas oportunidades en cada cambio que la vida presenta.
+        </p>
+      </div>
+    </div>
+</section>
+
     </main>
-  </body>
+ 
   <footer class="bg-gray-900 text-white p-6">
     <div class="container mx-auto grid grid-cols-1 md:grid-cols-2 gap-8">
       <!-- Columna 1: Mi Propósito -->
@@ -308,6 +757,16 @@
           </p>
         </div>
       </div>
-    </div>
+
   </footer>
+  
+    
+ 
+    <script>
+    function toggleMobileMenu() {
+      const menu = document.querySelector("#mobile-menu");
+      menu.classList.toggle("hidden");
+    }
+  </script>
+</body>
 </html>
